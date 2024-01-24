@@ -1,0 +1,177 @@
+<ion-header class="header">
+  <ion-toolbar color="#36abe0">
+    <img src="assets/wifi.png" alt="logo" height="20px" width="20px">&nbsp;
+    <img src="assets/signal.png" alt="logo" height="20px" width="20px">&nbsp;
+    <img src="assets/battery.png" alt="logo" height="20px" width="20px">&nbsp;
+  </ion-toolbar>
+</ion-header>
+<br>
+
+<ion-content [fullscreen]="true">
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>
+    </ion-card>
+  </div>
+
+  <ion-item>
+    <ion-avatar slot="end">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <span class="user">
+      <ion-note>Welcome,</ion-note> <br>
+      <ion-label>SURBHI RAY</ion-label>
+    </span>
+  </ion-item>
+  <hr class="line">
+
+  <ion-toolbar class="sub">
+    <ion-buttons slot="start" class="backbtn">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <h5><b>Appointment Schedule</b></h5>
+  </ion-toolbar>
+  <br>
+
+  <div class="heading">
+    <ion-title class="headline"><b>Upcoming schedule</b></ion-title>
+    <ion-note><a href="" style="text-decoration:none">View All</a></ion-note>
+  </div>
+
+  <ion-segment scrollable="true">
+    <ion-segment-button>
+      <ion-card class="doccard">
+        <ion-card>
+          <ion-list class="cardcontent">
+            <ion-avatar slot="start">
+              <img src="/assets/doc.jpg" alt="">
+            </ion-avatar>
+            <span>
+              <ion-label><b>Dr. Pat </b></ion-label> <br>
+              <ion-note>Gulipat</ion-note>
+            </span>
+            <ion-buttons>
+              <ion-button> <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-horizontal"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-list>
+        </ion-card>
+        <div class="timedt">
+          <span>
+            <ion-label>Sunday, 27 June 2023</ion-label> <br>
+            <ion-note>08:00am - 10:00am</ion-note>
+          </span>
+          <div id="symbol"><ion-icon class="iconbtn" slot="end" name="chatbox-ellipses"></ion-icon></div>
+        </div>
+      </ion-card>
+    </ion-segment-button>
+
+    <ion-segment-button>
+      <ion-card class="doccard">
+        <ion-card>
+          <ion-list class="cardcontent">
+            <ion-avatar slot="start">
+              <img src="/assets/doc.jpg" alt="">
+            </ion-avatar>
+            <span>
+              <ion-label><b>Dr. Pat </b></ion-label> <br>
+              <ion-note>Gulipat</ion-note>
+            </span>
+            <ion-buttons>
+              <ion-button> <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-horizontal"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-list>
+        </ion-card>
+        <div class="timedt">
+          <span>
+            <ion-label>Sunday, 27 June 2023</ion-label> <br>
+            <ion-note>08:00am - 10:00am</ion-note>
+          </span>
+          <div id="symbol"><ion-icon class="iconbtn" slot="end" name="chatbox-ellipses"></ion-icon></div>
+        </div>
+      </ion-card>
+    </ion-segment-button>
+
+    <ion-segment-button>
+      <ion-card class="doccard">
+        <ion-card>
+          <ion-list class="cardcontent">
+            <ion-avatar slot="start">
+              <img src="/assets/doc.jpg" alt="">
+            </ion-avatar>
+            <span>
+              <ion-label><b>Dr. Pat </b></ion-label> <br>
+              <ion-note>Gulipat</ion-note>
+            </span>
+            <ion-buttons>
+              <ion-button> <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-horizontal"></ion-icon>
+              </ion-button>
+            </ion-buttons>
+          </ion-list>
+        </ion-card>
+        <div class="timedt">
+          <span>
+            <ion-label>Sunday, 27 June 2023</ion-label> <br>
+            <ion-note>08:00am - 10:00am</ion-note>
+          </span>
+          <div id="symbol"><ion-icon class="iconbtn" slot="end" name="chatbox-ellipses"></ion-icon></div>
+        </div>
+      </ion-card>
+    </ion-segment-button>
+  </ion-segment>
+  <br>
+
+  <div class="heading">
+    <ion-title class="headline"><b>Let's find the doctor</b></ion-title>
+    <ion-note><a href="" style="text-decoration:none">View All</a></ion-note>
+  </div>
+
+  <ion-segment scrollable="true">
+    <ion-segment-button>
+      <ion-buttons class="stripbtn">
+        <ion-button>All</ion-button> <ion-button>Neurologist</ion-button> <ion-button>Heart Surgeon</ion-button> <ion-button>Dentist</ion-button> <ion-button>Orthologist</ion-button> <ion-button>ENT</ion-button> <ion-button>Opthalmologist</ion-button> <ion-button>Dermatologist</ion-button> 
+      </ion-buttons>
+    </ion-segment-button>
+  </ion-segment>
+
+  <ion-card class="bottomcrd">
+    <ion-toolbar color="light">
+      <ion-avatar slot="start">
+        <img src="/assets/doc.jpg" alt="">
+      </ion-avatar>
+      <ion-label>Dr. Rabiul </ion-label> <br>
+      <ion-note>Orthopedi</ion-note>
+      <ion-buttons slot="primary">
+        <ion-button class="dotbtn">
+          <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-horizontal"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-card>
+
+  <ion-card class="bottomcrd">
+    <ion-toolbar color="light">
+      <ion-avatar slot="start">
+        <img src="/assets/doc.jpg" alt="">
+      </ion-avatar>
+      <ion-label>Dr. Alex Romanov</ion-label> <br>
+      <ion-note>Dentist</ion-note>
+      <ion-buttons slot="primary">
+        <ion-button class="dotbtn">
+          <ion-icon slot="end" ios="ellipsis-horizontal" md="ellipsis-horizontal"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-card>
+
+  <br><br><br><br>
+
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0">
+      <ion-title></ion-title>
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

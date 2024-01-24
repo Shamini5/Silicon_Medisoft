@@ -1,0 +1,112 @@
+  <ion-header class="header">
+    <ion-toolbar color="#36abe0">
+      <img src="assets/wifi.png" alt="logo" height="20px" width="20px">&nbsp;
+      <img src="assets/signal.png" alt="logo" height="20px" width="20px">&nbsp;
+      <img src="assets/battery.png" alt="logo" height="20px" width="20px">&nbsp;
+    </ion-toolbar>
+    
+  </ion-header>
+  <br>
+
+  <ion-content [fullscreen]="true">
+    <div class="medilogo">
+      <ion-card class="medilogo">
+        <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+        <ion-card-title><b>Medisoft</b></ion-card-title>    
+      </ion-card>
+    </div>
+
+  <ion-toolbar>
+    <ion-buttons slot="start" class="backbtn">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title></ion-title>
+  </ion-toolbar>
+
+  <ion-card-header>
+    <ion-card-title color="#36acec"><b>Create Doctor Account</b></ion-card-title>
+    <ion-card-subtitle color="#36acec">Already have an Account? <a href="" style="text-decoration:none" [routerLink]="['/login']"><b>Sign In</b></a></ion-card-subtitle><br>
+    <ion-buttons>
+      <ion-button class="topbtn" [routerLink]="['/create-account']">Admin</ion-button> <ion-button class="topbtn" [routerLink]="['/create-doctor-account']">Doctor</ion-button> <ion-button class="topbtn" [routerLink]="['/create-account']">Patient</ion-button> 
+    </ion-buttons>
+  </ion-card-header>
+
+  <ion-card-content>
+    <form action="" id="docform">
+    <ion-label>Name</ion-label>
+    <ion-input id="name" type="text" placeholder="enter name" fill="solid" shape="round" errorText="Invalid Name" [(ngModel)]="formData.name" required></ion-input><br>
+    
+    <ion-label>Phone</ion-label>
+    <ion-input id="ph" type="number" placeholder="enter number" fill="solid" shape="round" errorText="Invalid Phone" [(ngModel)]="formData.phone" ></ion-input><br>
+
+    <ion-label>Create Password</ion-label>
+    <ion-input id="psd" type="text" placeholder="create password" fill="solid" shape="round" errorText="Invalid Password" [(ngModel)]="formData.password" required></ion-input><br>
+
+    <ion-label>Registration #</ion-label>
+    <ion-input id="registr" type="text" placeholder="enter registration" fill="solid" shape="round" errorText="Invalid Password" [(ngModel)]="formData.registration" ></ion-input><br>
+
+    <ion-label>Qualification</ion-label>
+    <ion-input id="quali" type="text" placeholder="enter qualification" fill="solid" shape="round" errorText="Invalid DOB" [(ngModel)]="formData.qualification" ></ion-input><br>
+
+    <ion-label>Gender</ion-label>
+      <ion-select id="gen" placeholder="gender" fill="solid" [(ngModel)]="formData.gender">
+        <ion-select-option value="f">Female</ion-select-option>
+        <ion-select-option value="m">Male</ion-select-option>
+        <ion-select-option value="o">Other</ion-select-option> 
+      </ion-select><br>
+    
+    <ion-label>Primary Clinic Address</ion-label>
+    <ion-input id="add" type="text" placeholder="enter address" fill="solid" shape="round" errorText="Invalid location" [(ngModel)]="formData.primary_clinic_add" ></ion-input><br>
+
+    <br><br>
+
+      <ion-buttons>
+        <ion-button type="submit" (click)="info()">Next - Clinic Info</ion-button>
+      </ion-buttons>  
+    </form>
+      <br><br>
+      <h2><b>List</b></h2>
+
+      <ion-segment scrollable="true">
+    <ion-segment-button>
+      <table class="doclist">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Create Password</th>
+            <th>Registration #</th>
+            <th>Qualification</th>
+            <th>Gender</th>
+            <th>Primary Clinic Address</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>S</td>
+            <td>7899455652</td>
+            <td>111</td>
+            <td>oo</td>
+            <td>mbbs</td>
+            <td>g</td>
+            <td>add</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </ion-segment-button>
+  </ion-segment>
+  </ion-card-content>
+
+  <br><br><br><br><br><br>
+
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0" >
+      <ion-title></ion-title>
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+  </ion-content>

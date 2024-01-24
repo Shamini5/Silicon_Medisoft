@@ -1,0 +1,112 @@
+<ion-header class="header">
+</ion-header>
+<br>
+
+<ion-content [fullscreen]="true">
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>
+    </ion-card>
+  </div>
+
+  <ion-item lines="none">
+    <ion-avatar slot="end">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"/>
+    </ion-avatar>
+    <span class="user">
+      <ion-note>Welcome,</ion-note> <br>
+      <ion-label><b>DR. DEDE</b></ion-label>
+    </span>
+  </ion-item>
+
+  <hr class="line">
+
+  <ion-segment scrollable="true">
+    <ion-segment-button>
+      <ion-buttons>
+        <ion-chip>Today's Appointment</ion-chip>
+        <ion-chip>Bill Report</ion-chip>
+        <ion-chip>Upcoming Appointment</ion-chip>
+        <ion-chip>Patient Queue</ion-chip>
+        <!-- <ion-button>Todays's Appointment</ion-button> <ion-button>Bill Report</ion-button> <ion-button>Upcoming Appointment</ion-button> <ion-button>Patient Queue</ion-button> -->
+      </ion-buttons>
+    </ion-segment-button>
+  </ion-segment>
+
+  <h5 class="headline"><b>Today's Appointments</b></h5>
+
+  <div class="appList">     
+  <ion-list>
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <span>
+      <ion-title><b>John Doe</b></ion-title>
+        <ion-note>Appointment Time: 10:00 AM</ion-note> 
+      </span>
+        <ion-chip slot="end"><b>Start</b>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </ion-chip>
+    </ion-item>
+ <hr class="strip">    
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <span>
+      <ion-title><b>Viki Doe</b></ion-title>
+        <ion-note>Scheduled for 10:30 AM</ion-note> 
+      </span>
+        <ion-chip slot="end"><b>Fever</b></ion-chip>
+    </ion-item>
+    <hr class="strip">  
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <span>
+      <ion-title><b>Jane Smith</b></ion-title>
+        <ion-note>Scheduled for 11:30 AM</ion-note> 
+      </span>
+        <ion-chip slot="end"><b>X-ray Report</b></ion-chip>
+    </ion-item>
+    <hr class="strip">  
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+      </ion-avatar>
+      <span>
+      <ion-title><b>David Johnson</b></ion-title>
+        <ion-note>Scheduled for 2:00 PM</ion-note> 
+      </span>
+        <ion-chip slot="end"><b>MRI Scan</b></ion-chip>
+    </ion-item>
+    <hr class="strip">  
+  </ion-list>
+  </div>
+<br>
+
+  <hr class="bmline">
+
+  <ion-toolbar class="Broadcastmsg">
+  <h5 class="headline"><b>Broadcast Message</b></h5>
+  <ion-chip slot="end">Create New Broadcast
+    <ion-icon name="chevron-forward"></ion-icon>
+  </ion-chip>
+  </ion-toolbar>
+
+  <hr class="bmline">
+
+  <h5 class="headline"><b>Upcoming Appointments</b></h5><br>
+
+  <br><br>
+
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0" >
+      <ion-title></ion-title>
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+  </ion-content>  

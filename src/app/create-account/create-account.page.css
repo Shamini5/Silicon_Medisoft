@@ -1,0 +1,12 @@
+h2 {
+  text-align: center;
+}
+
+ion-input {
+  --color: black;
+  --placeholder-color:rgb(39, 97, 118);
+}
+
+ion-select-option {
+  --color: black;
+}/*# sourceMappingURL=create-account.page.css.map */

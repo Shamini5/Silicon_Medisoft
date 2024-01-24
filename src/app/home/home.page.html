@@ -1,0 +1,93 @@
+<ion-content [fullscreen]="true">
+  <ion-header class="header">
+    <ion-toolbar color="#36abe0">
+      <img src="assets/wifi.png" alt="logo" height="20px" width="20px">&nbsp;
+      <img src="assets/signal.png" alt="logo" height="20px" width="20px">&nbsp;
+      <img src="assets/battery.png" alt="logo" height="20px" width="20px">&nbsp;
+    </ion-toolbar>
+  </ion-header>
+  <br>
+
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>   
+    </ion-card>
+  </div>
+  
+  <br><br><br><br>
+
+  <br><br>
+  <ion-buttons>
+    <ion-button [routerLink]="['/patient-account']">Patient</ion-button>
+  </ion-buttons>
+  <br><br>
+  <ion-buttons>
+    <ion-button [routerLink]="['/doctor-account']">Doctor</ion-button>
+  </ion-buttons>
+  <br><br>
+  <ion-buttons>
+    <ion-button [routerLink]="['/create-account']">Admin</ion-button>
+  </ion-buttons>
+  <br><br><br><br>
+
+  <h2>List of Users</h2> <br>
+
+  <ion-buttons>
+    <ion-button class="topbtn" (click)="getUsers()">Patient List</ion-button>
+  </ion-buttons>
+  <br>
+  <ion-list>
+    <ion-item *ngFor="let users of createaccount">
+      <table class="centre" style="width:80%">  
+        <tr>
+          <th>{{users.name}}</th>
+          <th>{{users.phone}}</th>
+          <th>{{users.password}}</th>
+          <th>{{users.dob}}</th>
+          <th>{{users.gender}}</th>
+          <th>{{users.location}}</th>
+          <th><ion-icon name="create-outline" (click)="navigateToEdit(users.id)"></ion-icon></th>
+        </tr>
+      </table>
+    </ion-item>
+  </ion-list>
+
+  <br><br>
+
+  <ion-buttons>
+    <ion-button class="topbtn" (click)="getDoctors()">Doctors List</ion-button>
+  </ion-buttons>
+  <br>
+  <ion-list>
+    <ion-item *ngFor="let doctors of doctoraccount">
+        <table class="centre" style="width:80%">
+          <tr>
+            <th>{{doctors.id}}</th>
+            <th>{{doctors.name}}</th>
+            <th>{{doctors.phone}}</th>
+            <th>{{doctors.password}}</th>
+            <th>{{doctors.registration}}</th>
+            <th>{{doctors.qualification}}</th>
+            <th>{{doctors.gender}}</th>
+            <th>{{doctors.primary_clinic_add}}</th>
+          </tr>
+        </table>
+    </ion-item>
+  </ion-list>
+
+  <!-- <ion-buttons>
+        <ion-button (click)="getPatients()">Patients List</ion-button>
+      </ion-buttons>   -->
+
+  <br><br>
+
+  <br><br><br><br>
+
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0">
+      <ion-title></ion-title>
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,94 @@
+<ion-header class="header">
+</ion-header>
+<br>
+
+<ion-content [fullscreen]="true" margin="20px" class="ion-margin">
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>
+    </ion-card>
+  </div>
+  <hr class="dash">
+
+  <ion-toolbar class="sub">
+    <ion-buttons slot="start">
+      <ion-back-button default-href="#"></ion-back-button>
+    </ion-buttons>
+    <h5><b>Create Account</b></h5>
+    <ion-note class="sign">Already have an Account? <a href="" [routerLink]="['/login']" style="text-decoration:none"> Sign In</a></ion-note>
+  </ion-toolbar>
+  <br>
+
+  <form action="" class="form" id="list">
+    <ion-label>Name</ion-label>
+    <ion-input type="text" placeholder="enter name" fill="solid" shape="round" errorText="Invalid Name" required></ion-input>
+    <br>
+    <ion-label>Phone</ion-label>
+    <ion-input type="number" placeholder="enter number" fill="solid" shape="round" errorText="Invalid Phone" required></ion-input>
+    <br>
+    <ion-label>Create Password</ion-label>
+    <ion-input type="text" placeholder="create password" fill="solid" shape="round" errorText="Invalid Password" required></ion-input>
+    <br>
+    <ion-label>Date of Birth</ion-label>
+    <ion-input type="date" placeholder="enter dob" fill="solid" shape="round" errorText="Invalid DOB" required></ion-input>
+    <br>
+    <ion-label>Gender</ion-label>
+    <ion-select placeholder="enter gender" fill="solid" shape="round" required>
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+      <ion-select-option value="o">Other</ion-select-option>
+    </ion-select>
+    <br>
+    <ion-label>Address</ion-label>
+    <ion-input type="text" placeholder="enter address" fill="solid" shape="round" errorText="Invalid location" required></ion-input>
+    <br><br>
+
+    <ion-buttons>
+      <ion-button (click)="createList()">Sign Up</ion-button>
+    </ion-buttons>
+  </form>
+
+  <br><br>
+<ion-title>List of Patients</ion-title>
+  <ion-segment scrollable="true">
+    <ion-segment-button>
+      <table class="list">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Phone</th>
+            <th>Password</th>
+            <th>DOB</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>Edit</th>
+          </tr>
+        </thead>
+        <!-- <tbody>
+          <tr>
+            <td>1</td>
+            <td>S</td>
+            <td>7899455652</td>
+            <td>111</td>
+            <td>oo</td>
+            <td>mbbs</td>
+            <td>g</td>
+            <td>add</td>
+            <td></td>
+          </tr>
+        </tbody> -->
+      </table>
+    </ion-segment-button>
+  </ion-segment>
+<br>
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0">
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>
+
+
+
