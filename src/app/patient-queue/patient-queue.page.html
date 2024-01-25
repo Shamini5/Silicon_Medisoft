@@ -1,0 +1,87 @@
+<ion-header class="header">
+</ion-header>
+<br>
+
+<ion-content [fullscreen]="true">
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>
+    </ion-card>
+  </div>
+
+  <ion-item lines="none">
+    <ion-avatar slot="end">
+      <ion-img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+    </ion-avatar>
+    <span class="user">
+      <ion-note>Welcome,</ion-note> <br>
+      <ion-label><b>DR. DEDE</b></ion-label>
+    </span>
+  </ion-item>
+
+  <hr class="line">
+
+  <ion-card id="cardspan">
+    <span>
+      <ion-icon name="medkit"></ion-icon>
+      <ion-note>Home</ion-note> 
+    </span>
+    <span>
+      <!-- <ion-img src="/assets/search.gif"></ion-img> -->
+      <ion-icon name="search"></ion-icon>
+      <ion-note>Search</ion-note>    
+    </span>
+    <span>
+      <ion-icon name="analytics"></ion-icon>
+      <ion-note>Metrics</ion-note> 
+    </span>
+  </ion-card>
+
+  <h5 class="headline"><b>Patient's Queue</b></h5>
+
+  <div class="pqueue">
+    <ion-list>
+      <ion-item lines="none">
+        <ion-avatar slot="start">
+          <ion-img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg"></ion-img>
+        </ion-avatar>
+        <span slot="start">
+          <ion-label>Patient Name:</ion-label>
+          <ion-note><b>Mary Johnson</b></ion-note> 
+        </span>
+        <span slot="end" class="agespan">
+          <ion-label>Age:</ion-label>
+          <ion-note><b>45</b></ion-note> 
+        </span>
+        <span slot="end" class="agespan">
+          <ion-label>Gender:</ion-label>
+          <ion-note><b>Female</b></ion-note> 
+        </span>
+        <span slot="end">
+          <ion-icon class="iconspan" name="sync-circle"></ion-icon>
+          <ion-icon class="iconspan" name="trash"></ion-icon>
+        </span>      
+      </ion-item>
+
+    <ion-item lines="none">
+      <ion-avatar slot="start">
+        <ion-img alt="Appointment" src="/assets/schedule.png"></ion-img>
+      </ion-avatar>
+      <span>
+        <ion-label>Appointment Date:</ion-label>
+        <ion-note><b>June 15, 2024</b></ion-note> 
+      </span>
+      <span slot="end" class="agespan">
+        <ion-label>Time:</ion-label>
+        <ion-note><b>9:30 AM</b></ion-note> 
+      </span>
+      <span slot="end">
+        <ion-icon class="iconspan" name="sync-circle"></ion-icon>
+        <ion-icon class="iconspan" name="trash"></ion-icon>
+      </span>      
+    </ion-item>
+
+    <hr class="strip">  
+    </ion-list>
+  </div>

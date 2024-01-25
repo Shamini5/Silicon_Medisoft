@@ -1,0 +1,64 @@
+.user ion-label {
+  font-size: small;
+  margin-left: 10px;
+}
+
+.user ion-note {
+  font-size: xx-small;
+  margin-left: 10px;
+}
+
+.mid {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin-top: -10px;
+}
+
+ion-avatar {
+  margin-top: 5px;
+}
+
+ion-card {
+  width: 100%;
+  box-shadow: none;
+}
+
+ion-title {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.timeslot {
+  display: flex;
+  justify-content: center;
+}
+
+.timeslot ion-card {
+  background-color: aliceblue;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+h5 {
+  margin: 20px;
+}
+
+ion-segment {
+  background: #3a98a4;
+  width: 50%;
+  height: 30px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.details {
+  display: flex;
+}
+
+form {
+  margin: 20px;
+}/*# sourceMappingURL=set-appointment.page.css.map */

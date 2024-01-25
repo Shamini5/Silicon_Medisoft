@@ -1,0 +1,35 @@
+.sub{
+    align-items: center;
+    ion-back-button{
+      color: rgb(46, 43, 43);
+      margin-top: -10px;
+    }
+    h5{
+      font-size: 20px;
+      margin-top: 20px;
+    }
+  }
+
+  .topbtn{
+    ion-button{
+    background-color: rgb(134, 177, 200);
+    color: rgb(46, 43, 43);
+    margin-left: 20px;
+    margin-right: 20px;
+    }   
+ }
+
+ table th,td{
+  border: 1px solid black;
+  height: 40px;
+}
+
+table{
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+ion-title{
+  text-align: center;
+}

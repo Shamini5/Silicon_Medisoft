@@ -1,0 +1,202 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+@import 'swiper/css/bundle';
+
+
+
+
+// pages css global
+
+ion-content{
+    --ion-background-color:rgb(210, 237, 244) ;  
+    --ion-text-color:#286687;
+    background-repeat: repeat-x;
+    height: auto;
+}
+
+.form{
+  margin: 20px;
+  color: rgb(46, 43, 43);
+  margin-top: 2px;
+    ion-input, ion-select{
+      margin-top: 5px;
+    }
+    
+    ::placeholder{
+      font-size: small;
+    }
+}
+
+.backbtn{
+  color: rgb(46, 43, 43);
+  margin-bottom: -10px;
+}
+
+.dotbtn{
+color: rgb(46, 43, 43);
+background: transparent;
+border: none;
+box-shadow: none;
+}
+
+hr.line{
+  border-top: 1px solid #286687;
+  width:95%;
+  margin-top: 0px;
+}
+hr.dash{
+  border-top: 1px solid #286687;
+  width:95%;
+  margin-top: 30px;
+}
+
+
+.headline{
+color: rgb(46, 43, 43);
+font-size: 17px;
+}
+
+ion-card-title{
+    font-size: 22px;
+}
+
+ion-label{
+    font-size: 15px;
+    color: rgb(46, 43, 43);
+}
+
+.header{
+    background-color: #3a98a4;
+    height: 40px; 
+}
+
+.toptitle{
+    display: flex;
+    color: rgb(6, 163, 163);
+    display: flex;
+    justify-content: center;   
+}
+
+.footer{
+    background-color: #3a98a4;
+    text-align: center;
+    color: white;
+    bottom: 0;
+    position: fixed;
+    height: 30px;
+}
+
+p{
+    font-size: 11px;
+    margin-top: -15px;
+}
+
+h2{
+    text-align: center;
+}
+
+ion-button{
+    width: 100%;
+    height: 40px;
+    justify-content: center;
+    color: #fcfdfe;
+    background-color: #2c94bd;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: 2px solid rgb(118, 196, 216);
+    box-shadow: 0 2px #fcfdfe;
+  }
+
+ion-button:hover {background-color: #1292d7}
+
+ion-button:active {
+    background-color: #2c94bd;
+    box-shadow: 0 5px #fcfdfe;
+    transform: translateY(4px);
+}
+
+// .topbtn{
+//     background-color: rgb(134, 177, 200);
+//     color: rgb(36, 33, 33);
+//     // margin: 20px;
+//  }
+
+.medilogo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.medilogo ion-img{
+  height: 25px;
+  width: 25px;
+}
+.medilogo ion-card-title{
+  font-size: x-large;  
+  margin-left: 7px;  
+  font-weight: 300;
+  color:#286687;
+}
+.medilogo ion-card{
+  width: 100%;
+  height: 60px;
+  box-shadow:none ;
+  margin-top: -20px; 
+  margin-bottom: -30px;
+}
+
+// *******set-appointment*********
+ion-modal{
+  --background: rgba(44, 39, 45, 0.2);
+
+  &::part(content){
+    backdrop-filter: blur(7px);
+  }
+  ion-content{
+    --background: transparent;
+    --padding-top: 10vh;
+    --padding-start: 20px;
+    --padding-end:20px;
+  }
+  ion-datetime{
+    border-radius: 8px;
+  }
+}
+
+#modal{
+  cursor: pointer;
+}
+
+
+
+
+
+
+

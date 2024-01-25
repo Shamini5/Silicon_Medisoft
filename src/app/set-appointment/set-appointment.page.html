@@ -1,0 +1,124 @@
+<ion-header class="header">
+</ion-header>
+<br>
+
+<ion-content [fullscreen]="true">
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>
+    </ion-card>
+  </div>
+
+  <ion-item lines="none">
+    <ion-avatar slot="end">
+      <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+    </ion-avatar>
+    <span class="user">
+      <ion-note>Welcome,</ion-note> <br>
+      <ion-label><b>SURBHI RAY</b></ion-label>
+    </span>
+  </ion-item>
+  <hr class="line">
+
+  <div class="mid">
+    <ion-card>
+      <ion-toolbar>
+        <ion-buttons slot="start" class="backbtn">
+          <ion-back-button default-href="#"></ion-back-button>
+        </ion-buttons>
+        <ion-avatar slot="end">
+          <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+        </ion-avatar>
+        <ion-title>Book Appointment</ion-title>
+        <span class="spn">
+          <ion-label><b>Dr. Bellamy Nicholas</b></ion-label> <br>
+          <ion-note>Virologist</ion-note>
+        </span>
+      </ion-toolbar>
+    </ion-card>
+  </div>
+
+  <h5 class="headline"><b>Select Date</b></h5>
+  <ion-item id="modal">
+    <ion-icon name="calendar-outline" slot="start"></ion-icon>
+    <ion-label class="dt">Choose Date</ion-label>
+    <ion-text slot="end">{{ newString }}</ion-text>
+  </ion-item>
+
+  <ion-modal trigger="modal">
+    <ng-template>
+      <ion-content>
+        <ion-datetime #datetime [value]="dateValue" size="cover" (ionChange)="dateChanged(datetime.value)"
+          showDefaultButtons="true" (ionCancel)="pickerView = false"></ion-datetime>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <h5 class="headline"><b>Available Time</b></h5>
+  <ion-buttons class="timeslot">
+    <ion-button>09:00 AM</ion-button>
+    <ion-button>09:30 AM</ion-button>
+    <ion-button>10:00 AM</ion-button>
+    <ion-button>10:30 AM</ion-button>
+  </ion-buttons>
+  <ion-buttons class="timeslot">
+    <ion-button>12:00 PM</ion-button>
+    <ion-button>12:30 PM</ion-button>
+    <ion-button>01:30 PM</ion-button>
+    <ion-button>02:00 PM</ion-button>
+  </ion-buttons>
+  <ion-buttons class="timeslot">
+    <ion-button>03:00 PM</ion-button>
+    <ion-button>04:30 PM</ion-button>
+    <ion-button>05:00 PM</ion-button>
+    <ion-button>05:30 PM</ion-button>
+  </ion-buttons>
+
+  <div class="details">
+    <h5 class="headline"><b>Patients Details</b></h5>
+    <ion-segment value="default" mode="ios">
+      <ion-segment-button value="default">
+        <ion-label>Self</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="segment">
+        <ion-label>Others</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <form action="" class="form">
+    <ion-label>Name</ion-label>
+    <ion-input type="text" placeholder="enter name" fill="solid" shape="round" errorText="Invalid Name"
+      required></ion-input><br>
+    <ion-label>Age</ion-label>
+    <ion-select placeholder="select age" shape="round" fill="solid">
+      <ion-select-option value="11">0-11</ion-select-option>
+      <ion-select-option value="18">11-18</ion-select-option>
+      <ion-select-option value="30">18-30</ion-select-option>
+      <ion-select-option value="45">30-45</ion-select-option>
+      <ion-select-option value="60">45-60</ion-select-option>
+      <ion-select-option value="75">60-75</ion-select-option>
+      <ion-select-option value="above">75 & above</ion-select-option>
+    </ion-select> <br>
+    <ion-label>Gender</ion-label>
+    <ion-select placeholder="enter gender" fill="solid" shape="round">
+      <ion-select-option value="f">Female</ion-select-option>
+      <ion-select-option value="m">Male</ion-select-option>
+      <ion-select-option value="o">Other</ion-select-option>
+    </ion-select><br>
+    <br><br>
+
+    <ion-buttons>
+      <ion-button>Set Appointment</ion-button>
+    </ion-buttons>
+  </form>
+
+  <br><br>
+
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0">
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-header class="header">
+</ion-header>
+<br>
+
+<ion-content [fullscreen]="true">
+  <div class="medilogo">
+    <ion-card class="medilogo">
+      <ion-img src="assets/silicon.png" alt="logo"></ion-img>
+      <ion-card-title><b>Medisoft</b></ion-card-title>
+    </ion-card>
+  </div>
+
+  <div id="main" >
+  <img src="assets/signinup.jpg" alt="">
+  </div>
+
+  <br><br>
+  <ion-buttons>
+    <ion-button id="signinbtn" [routerLink]="['/login']">Sign In</ion-button>
+  </ion-buttons>
+  <br><br>
+  <ion-buttons>
+    <ion-button [routerLink]="['/home']">Sign Up</ion-button>
+  </ion-buttons>
+  <br><br>
+
+  <br><br>
+
+  <ion-footer class="footer">
+    <ion-toolbar color="#36abe0">
+      <p>All rights reserved with SiliconMount Tech Pvt. Ltd.</p>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

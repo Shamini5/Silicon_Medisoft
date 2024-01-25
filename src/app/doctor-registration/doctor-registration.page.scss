@@ -1,0 +1,45 @@
+ion-note{
+  margin-left: 20px;
+}
+
+.topbtn{ 
+    ion-button{
+      border: none;
+      color: rgb(49, 45, 45);
+      background-color: rgb(134, 177, 200);
+      margin-top: 10px;
+      height: 30px;
+      border-radius: 10px;
+      width: 100%;
+      font-size: 10px;
+  }  
+ }
+
+ ion-card-subtitle{
+    color: rgb(49, 45, 45);
+ }
+  
+.sub{
+  align-items: center;
+  ion-back-button{
+    color: rgb(46, 43, 43);
+  }
+  h5{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
+.heading{
+  display:flex; 
+  align-items: center;
+  margin-top: 15px;
+  ion-select{
+    margin-right: 20px;
+    width: 130px;
+    font-size: 15px;
+    text-align: center;
+    border-color: rgb(46, 43, 43);
+  }
+  
+}

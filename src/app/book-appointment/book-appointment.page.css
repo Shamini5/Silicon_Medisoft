@@ -1,0 +1,105 @@
+.docprofile {
+  text-align: center;
+}
+
+ion-avatar {
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.user ion-label {
+  font-size: small;
+  margin-left: 10px;
+}
+
+.user ion-note {
+  font-size: xx-small;
+  margin-left: 10px;
+}
+
+.card3 ion-card {
+  width: 100px;
+  height: 80px;
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.card3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card3 ion-card-title {
+  font-size: small;
+  text-align: center;
+}
+
+.card3 ion-card-subtitle {
+  font-size: x-small;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.card3 img {
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  display: flex;
+  margin-top: 5px;
+}
+
+.about {
+  margin: 20px;
+  color: rgb(46, 43, 43);
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.about p {
+  padding-bottom: 0px;
+  color: rgb(100, 96, 96);
+  font-size: small;
+}
+
+.com ion-card {
+  width: 100%;
+  height: 50px;
+  box-shadow: none;
+  margin: -10px;
+}
+
+.com {
+  display: flex;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.com ion-card-title {
+  font-size: small;
+}
+
+.com ion-card-subtitle {
+  font-size: 10px;
+}
+
+.com ion-icon {
+  font-size: 15px;
+  margin: 15px 0 15px 15px;
+  color: orange;
+}
+
+.set ion-button {
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  color: #fcfdfe;
+  background-color: #2c94bd;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+}/*# sourceMappingURL=book-appointment.page.css.map */

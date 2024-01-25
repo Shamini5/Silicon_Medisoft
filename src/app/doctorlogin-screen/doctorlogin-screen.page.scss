@@ -1,0 +1,83 @@
+.user ion-label{
+    font-size: small;
+    margin-left: 20px;
+    margin-bottom: -15px;
+}
+
+.user ion-note{
+     font-size: x-small;
+     margin-left: 20px;
+     color: #286687;
+}
+ion-avatar{
+    margin-right: 20px;
+}
+
+h5{
+    margin-left: 20px;
+    margin-bottom: 0;
+}
+
+ion-segment{
+    ion-chip{
+        border: 1px solid #286687;
+        background: transparent;
+    }
+}
+
+.appList{
+    ion-item{
+        margin: 5px;
+    }
+    ion-avatar{
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+   }
+   ion-chip{
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(46, 43, 43);
+    background: transparent;
+  }
+    ion-note{
+        margin-left: 20px;
+        font-size: 12px;
+    }
+    ion-title{
+        font-size: 15px;
+        color: rgb(46, 43, 43);
+    }
+}
+
+ion-chip{
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 12px;
+    // background: transparent;
+  }
+
+.Broadcastmsg{
+    display: flex;
+    h5{
+        margin-bottom: 15px;
+    }
+    ion-chip{
+        margin-right: 40px;
+        border: 1px solid rgb(46, 43, 43);
+        background: transparent;
+    }
+}
+
+hr.strip{
+    border-top: 1px solid rgb(178, 177, 177);
+    width:95%;
+}
+
+hr.bmline{
+    border-top: 1px solid #286687;
+    width:95%;
+    // justify-content: center;
+  }
+
+  
